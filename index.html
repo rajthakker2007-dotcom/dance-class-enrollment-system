@@ -1,0 +1,342 @@
+<!--
+    Project   : Dance Class & Choreography Enrollment System
+    Student   : Anushka Sharma
+    Reg No    : 2543165
+    Class     : II BCA - B
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dance Class & Choreography Enrollment System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- IMPORTANT: CSS is in the SAME folder -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Top Banner -->
+<div class="top-strip">
+    <p>Dance Class & Choreography Enrollment System • By Anushka Sharma (2543165) – II BCA-B 💃</p>
+</div>
+
+<!-- Navbar / Home Page Module -->
+<header class="navbar">
+    <div class="logo">
+        <span class="logo-main">Twirlz</span>
+        <span class="logo-sub">Dance & Choreography Studio</span>
+    </div>
+    <nav class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#styles">Styles</a>
+        <a href="#enroll">Enroll</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero / Home Page Module -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="tagline">Dance • Learn • Perform</p>
+        <h1>Turn every <span>beat</span> into a story.</h1>
+        <p class="hero-text">
+            Choose your dance style, level, batch timing and choreography type in one simple flow.
+            This system helps students enroll for classes and request custom choreography for events.
+        </p>
+        <div class="hero-actions">
+            <a href="#enroll" class="btn primary">Start Enrollment</a>
+            <a href="#styles" class="btn secondary">View Dance Styles</a>
+        </div>
+        <div class="hero-stats">
+            <div>
+                <h3>20+</h3>
+                <p>Active Batches</p>
+            </div>
+            <div>
+                <h3>10+</h3>
+                <p>Dance Styles</p>
+            </div>
+            <div>
+                <h3>300+</h3>
+                <p>Happy Learners</p>
+            </div>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="sticker-wrap">
+            <!-- Dancing sticker (put a GIF in images folder with this name) -->
+            <img src="images/dancer1.gif" alt="Dancing sticker" class="sticker">
+        </div>
+        <div class="hero-card">
+            <p class="hero-card-title">Today’s Highlight</p>
+            <p class="hero-card-style">Bollywood x Hip-Hop Fusion</p>
+            <p class="hero-card-time">6:30 PM – 8:00 PM • Studio A</p>
+            <p class="hero-card-note">Perfect for college fest & cultural performances ✨</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Academy Module -->
+<section id="about" class="section alt">
+    <h2 class="section-title">About the Academy</h2>
+    <div class="about-grid">
+        <div class="about-card">
+            <h3>What is this system?</h3>
+            <p>
+                The <strong>Dance Class & Choreography Enrollment System</strong> is a mini project that
+                allows students to register for dance classes, choose their preferred style and level,
+                select batch timing and also request choreography for events like weddings and college fests.
+            </p>
+        </div>
+        <div class="about-card">
+            <h3>Key Features / Modules</h3>
+            <ul>
+                <li>Home Page & About Module</li>
+                <li>Dance Styles Display Module</li>
+                <li>Student Registration Module</li>
+                <li>Dance Style, Level & Batch Selection Modules</li>
+                <li>Choreography Type Selection Module</li>
+                <li>Live Enrollment Preview & Fee Estimation Module</li>
+                <li>Gallery & Testimonials Module</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Dance Styles Module -->
+<section id="styles" class="section">
+    <h2 class="section-title">Dance Styles Offered</h2>
+    <div class="card-grid">
+        <div class="card style-card">
+            <span class="emoji">💃</span>
+            <h3>Bollywood</h3>
+            <p>Filmy, fun and energetic choreography suitable for stage shows and college events.</p>
+            <p class="meta">Levels: Beginner / Intermediate</p>
+        </div>
+        <div class="card style-card">
+            <span class="emoji">🕺</span>
+            <h3>Hip-Hop</h3>
+            <p>Grooves, isolations and freestyle for those who love swag and street styles.</p>
+            <p class="meta">Levels: Intermediate / Advanced</p>
+        </div>
+        <div class="card style-card">
+            <span class="emoji">🙏</span>
+            <h3>Classical / Semi-Classical</h3>
+            <p>Graceful movements blending classical techniques with modern elements.</p>
+            <p class="meta">Levels: All</p>
+        </div>
+        <div class="card style-card">
+            <span class="emoji">✨</span>
+            <h3>Contemporary</h3>
+            <p>Expressive storytelling using fluid body movement and floor work.</p>
+            <p class="meta">Levels: Beginner / Advanced</p>
+        </div>
+    </div>
+</section>
+
+<!-- Enrollment Section: Student Registration + Level / Batch / Choreo Modules -->
+<section id="enroll" class="section form-section">
+    <h2 class="section-title">Student Enrollment</h2>
+    <p class="section-subtitle">
+        Fill in your details and choose your preferences. The summary on the right will update live.
+    </p>
+
+    <div class="enroll-layout">
+        <!-- Student Registration Module -->
+        <form id="enrollmentForm" class="enroll-form">
+            <div class="form-grid">
+                <div class="form-card">
+                    <h3>Student Details</h3>
+
+                    <label>Full Name</label>
+                    <input type="text" id="studentName" required placeholder="e.g. Anushka Sharma">
+
+                    <label>Email</label>
+                    <input type="email" id="email" required placeholder="e.g. anushka@example.com">
+
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" required placeholder="e.g. 9876543210">
+
+                    <div class="inline-row">
+                        <div>
+                            <label>Age</label>
+                            <input type="number" id="age" min="5" max="70" required>
+                        </div>
+                        <div>
+                            <label>City</label>
+                            <input type="text" id="city" placeholder="e.g. Chennai">
+                        </div>
+                    </div>
+
+                    <label>College / School (optional)</label>
+                    <input type="text" id="institution" placeholder="e.g. II BCA-B, XYZ College">
+                </div>
+
+                <!-- Dance Style Selection, Level, Batch, Choreography Type Modules -->
+                <div class="form-card">
+                    <h3>Dance & Choreography Preferences</h3>
+
+                    <!-- Dance Style Selection Module -->
+                    <label>Dance Style</label>
+                    <select id="danceStyle" required>
+                        <option value="">-- Select Dance Style --</option>
+                        <option value="Bollywood">Bollywood</option>
+                        <option value="Hip-Hop">Hip-Hop</option>
+                        <option value="Classical">Classical</option>
+                        <option value="Semi-Classical">Semi-Classical</option>
+                        <option value="Contemporary">Contemporary</option>
+                        <option value="Freestyle">Freestyle</option>
+                    </select>
+
+                    <!-- Level Selection Module -->
+                    <label>Level</label>
+                    <select id="level" required>
+                        <option value="">-- Select Level --</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+
+                    <!-- Batch Timing Module -->
+                    <label>Preferred Batch Timing</label>
+                    <select id="batchTiming" required>
+                        <option value="">-- Select Batch Timing --</option>
+                        <option value="Weekday Morning (7:00 AM - 8:00 AM)">Weekday Morning (7:00 AM - 8:00 AM)</option>
+                        <option value="Weekday Evening (6:30 PM - 8:00 PM)">Weekday Evening (6:30 PM - 8:00 PM)</option>
+                        <option value="Weekend Morning (8:00 AM - 9:30 AM)">Weekend Morning (8:00 AM - 9:30 AM)</option>
+                        <option value="Weekend Evening (5:30 PM - 7:00 PM)">Weekend Evening (5:30 PM - 7:00 PM)</option>
+                    </select>
+
+                    <!-- Choreography Type Module -->
+                    <label>Choreography Type (optional)</label>
+                    <select id="choreoType">
+                        <option value="None">Only Classes (No Choreo)</option>
+                        <option value="Solo">Solo Performance</option>
+                        <option value="Duet">Duet / Couple Dance</option>
+                        <option value="Group">Group Performance</option>
+                        <option value="Wedding Sangeet">Wedding Sangeet</option>
+                        <option value="College Fest">College Fest / Cultural</option>
+                        <option value="Competition">Competition Piece</option>
+                    </select>
+
+                    <label>Goals / Notes for Instructor</label>
+                    <textarea id="notes" rows="4"
+                              placeholder="Stage fear? Fest coming up? Bridal entry? Mention here."></textarea>
+
+                    <div class="toggle-row">
+                        <input type="checkbox" id="whatsappUpdates" value="Yes">
+                        <label for="whatsappUpdates">Send class updates on WhatsApp</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enrollment Processing (front-end demo) -->
+            <div class="form-footer">
+                <button type="submit" class="btn primary big" id="submitBtn">
+                    Submit Enrollment
+                </button>
+                <p class="tiny-text">
+                    (Demo only – in a full system this data would be stored in a database through a backend module.)
+                </p>
+            </div>
+        </form>
+
+        <!-- Live Enrollment Preview + Fee Plan Module -->
+        <aside class="summary-card">
+            <h3>Enrollment Preview</h3>
+            <p class="summary-name" id="summaryName">Student: —</p>
+            <p id="summaryStyle">Style: —</p>
+            <p id="summaryLevel">Level: —</p>
+            <p id="summaryBatch">Batch: —</p>
+            <p id="summaryChoreo">Choreography: —</p>
+
+            <div class="summary-divider"></div>
+
+            <p id="summaryFee" class="summary-fee">Estimated Monthly Fee: —</p>
+            <p id="summaryChoreoFee" class="summary-fee">Approx. Choreo Add-on: —</p>
+            <p id="summaryTag" class="summary-tag">Pick your options to see your dance vibe ✨</p>
+
+            <p id="summaryNotes" class="summary-notes">
+                Notes will appear here as you type…
+            </p>
+
+            <div class="mini-sticker-wrap">
+                <img src="images/dancer2.gif" alt="Dancing sticker" class="sticker small">
+            </div>
+        </aside>
+    </div>
+</section>
+
+<!-- Testimonials Module -->
+<section class="section alt">
+    <h2 class="section-title">What Students Say</h2>
+    <div class="card-grid">
+        <div class="card">
+            <p class="quote">“The choreography for our college fest was so clean and well planned!”</p>
+            <p class="quote-name">– Fest Team, II BCA</p>
+        </div>
+        <div class="card">
+            <p class="quote">“Beginner batches are super friendly. No judgement, only growth.”</p>
+            <p class="quote-name">– First Year Student</p>
+        </div>
+        <div class="card">
+            <p class="quote">“The batch timing options helped me dance even with a tight schedule.”</p>
+            <p class="quote-name">– Working Student</p>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Module (with stickers) -->
+<section id="gallery" class="section">
+    <h2 class="section-title">Gallery & Stickers</h2>
+    <p class="section-subtitle">
+        You can add practice pictures, event photos or animated dance GIFs here for demonstration.
+    </p>
+    <div class="gallery-grid">
+        <div class="gallery-card">
+            <img src="images/dance_pose1.png" alt="Dance pose 1">
+            <p>Stage Rehearsal</p>
+        </div>
+        <div class="gallery-card">
+            <img src="images/dance_pose2.png" alt="Dance pose 2">
+            <p>College Fest Performance</p>
+        </div>
+        <div class="gallery-card">
+            <img src="images/dancer3.gif" alt="Animated dance sticker">
+            <p>Dancing Sticker</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact & Footer Module -->
+<section id="contact" class="section alt">
+    <h2 class="section-title">Contact & Project Details</h2>
+    <div class="about-grid">
+        <div class="about-card">
+            <h3>Project Owner</h3>
+            <p><strong>Name:</strong> Anushka Sharma</p>
+            <p><strong>Register Number:</strong> 2543165</p>
+            <p><strong>Class:</strong> II BCA - B</p>
+        </div>
+        <div class="about-card">
+            <h3>Contact (Demo)</h3>
+            <p><strong>Email:</strong> anushkasharma2103@gmail.com</p>
+            <p><strong>Phone:</strong> +91-95915 35940</p>
+            <p><strong>Location:</strong> Bangalore, Karnataka</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p class="footer-bottom">
+        Dance Class & Choreography Enrollment System • Mini Project by Anushka Sharma (2543165), II BCA-B
+    </p>
+</footer>
+
+<!-- IMPORTANT: JS is also in the SAME folder -->
+<script src="script.js"></script>
+</body>
+</html>
